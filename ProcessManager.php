@@ -1177,6 +1177,7 @@ class ProcessManager
 <?php
 
 set_time_limit(0);
+ini_set('memory_limit', '64M');
 
 require_once file_exists($dir . '/vendor/autoload.php')
     ? $dir . '/vendor/autoload.php'
